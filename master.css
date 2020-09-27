@@ -7,6 +7,7 @@ a {
 body {
   background-color: #F0E9D5;
   font-family: cursive;
+  font-size: 3em;
 }
 
 p, a, li {
@@ -18,7 +19,7 @@ p, a, li {
 }
 
 .bg-light {
-  background-color: #5A3825 !important;
+  background-color: #82624E !important;
   /* height: 100px; */
 }
 
@@ -26,7 +27,7 @@ p, a, li {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  color: #5A3825 !important;
+  /* color: #5A3825 !important; */
 }
 
 footer {
@@ -40,10 +41,6 @@ footer {
   /* height: auto; */
 }
 
-.logo {
-  width: 50px;
-}
-
 .page-wrap--shadow {
   max-width: 1024px;
   margin: 30px auto 0px;
@@ -55,6 +52,10 @@ footer {
 .page-wrap {
   max-width: 1024px;
   margin: 0 auto;
+}
+
+.logo {
+  width: 50px;
 }
 
 .hero-image--dark {
@@ -102,6 +103,7 @@ footer {
 
 .recipe-wrapper {
   margin: 0 0 30px;
+  display: unset;
 }
 
 .recipe-card {
@@ -137,19 +139,23 @@ footer {
 
 .about-section {}
 
-@media (min-width: 480px) {
+@media (min-width: 480px) {}
+
+@media (min-width: 600px) {}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 1em;
+  }
+
+  .recipe-card {
+    display: flex;
+  }
+
   .recipe-wrapper {
     display: flex;
   }
 }
-
-@media (min-width: 600px) {
-  .recipe-card {
-    display: flex;
-  }
-}
-
-@media (min-width: 800px) {}
 
 @media (min-width: 1024px) {}
 
